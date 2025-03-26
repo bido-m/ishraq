@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌕 إشراق - نور الإسلام</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>إشراق 🌕</h1>
+        <p>نور الإسلام وهداية المؤمنين</p>
+    </header>
+    
+    <div class="container" id="mainContainer">
+        <div class="card">
+            <h1 class="first-h1">📜 &nbsp;اقوال وحكم ماثورة<br><span>.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; واحاديث نبوية</h1>
+            <div class="card-content">
+                <p id="quote">اضغط على الزر للحصول على اقتباس</p>
+            <h3 id="author"></h3>
+            <button class="btn" onclick="generateQuote()">🎲 اقتباس جديد</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span>📖</span> المصحف الكريم</h2>
+            <div class="card-content">
+                <p class="p2">استمع إلى تلاوات متنوعة للقرآن الكريم بأصوات أشهر القراء</p>
+                <button class="btn" onclick="openQuran()">🔊 فتح المصحف</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span>🕌</span> مواقيت الصلاة</h2>
+            <div class="card-content">
+                <p class="p2">تعرف على أوقات الصلاة حسب موقعك الجغرافي</p>
+                <button class="btn" onclick="showCountrySelector()">⏱ عرض المواقيت</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span>❓</span> اختبار ديني</h2>
+            <div class="card-content">
+                <p class="p2">اختبر معلوماتك الدينية مع أسئلة متنوعة في العقيدة والفقه</p>
+                <button class="btn" onclick="openQuiz()">✏️ بدء الاختبار</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="prayerTimesContainer" class="prayer-times-container">
+        <h2>مواقيت الصلاة</h2>
+        <select id="countrySelect" class="country-selector">
+            <option value="">-- اختر بلدك --</option>
+            <option value="36">المملكة العربية السعودية</option>
+            <option value="170">مصر</option>
+            <option value="139">العراق</option>
+            <option value="144">الأردن</option>
+            <option value="85">سوريا</option>
+            <option value="135">لبنان</option>
+            <option value="96">فلسطين</option>
+            <option value="1">اليمن</option>
+            <option value="63">عُمان</option>
+            <option value="51">الإمارات العربية المتحدة</option>
+            <option value="58">قطر</option>
+            <option value="248">البحرين</option>
+            <option value="62">الكويت</option>
+            <option value="130">السودان</option>
+            <option value="89">ليبيا</option>
+            <option value="150">تونس</option>
+            <option value="153">الجزائر</option>
+            <option value="103">المغرب</option>
+        </select>
+        
+        <div id="prayerTimesIframeContainer" style="margin-top: 20px;"></div>
+        
+        <button class="btn back-btn" onclick="backToMain()">↩ الرجوع</button>
+    </div>
+
+
+    
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
