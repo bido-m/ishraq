@@ -2,6 +2,10 @@ body {
     font-family: 'Amiri',Arial, sans-serif;
     text-align: center;
     margin: 50px;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 header{
     background-color: #007BFF;
@@ -68,6 +72,7 @@ span{
 .prayer-times-container {
     display: none;
     width: 100%;
+    min-height: 45vh;
 }
 .country-selector {
     padding: 10px;
